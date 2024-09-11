@@ -8,20 +8,18 @@ This is the frontend of the Estate Website built using React, Tailwind CSS, and 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies](#technologies)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
-- Property listings with filters (category, price, location)
+- Property listings (category, price, location)
 - Responsive design for various screen sizes
 - Detailed property pages with images and descriptions
-- User authentication (if applicable)
+- User authentication
 - Interactive UI components using React
 
 ## Screenshots
 
 ### Homepage
-![Homepage](./screenshots/homepage.png)
+![Homepage](./screenshots/home1.png)
 
 ### Property List Page
 ![Property List](./screenshots/property-list.png)
