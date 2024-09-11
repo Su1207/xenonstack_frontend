@@ -1,8 +1,33 @@
-# React + Vite
+# Estate Website - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend of the Estate Website built using React, Tailwind CSS, and modern web technologies.
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
+- [License](#license)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Property listings with filters (category, price, location)
+- Responsive design for various screen sizes
+- Detailed property pages with images and descriptions
+- User authentication (if applicable)
+- Interactive UI components using React
+
+## Screenshots
+
+### Homepage
+![Homepage](./screenshots/homepage.png)
+
+### Property List Page
+![Property List](./screenshots/property-list.png)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/estate-frontend.git
