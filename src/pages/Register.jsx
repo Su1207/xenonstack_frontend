@@ -47,7 +47,7 @@ export default function Register() {
       }
     } catch (err) {
       console.log(err);
-      toast.error(err.response.data.message);
+      toast.error("Error in registering");
     } finally {
       setLoading(false);
     }
