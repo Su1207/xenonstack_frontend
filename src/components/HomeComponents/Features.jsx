@@ -2,7 +2,10 @@ import React from "react";
 
 const Features = () => {
   return (
-    <div className="flex flex-col items-center bg-white py-10 overflow-hidden  font-poppins">
+    <div
+      id="features"
+      className="flex flex-col items-center bg-white py-10 overflow-hidden  font-poppins"
+    >
       <h2 className=" text-5xl text-center text-black mb-8 font-bold">
         Features
       </h2>

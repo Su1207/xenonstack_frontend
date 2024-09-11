@@ -8,6 +8,7 @@ import Register from "./pages/Register";
 import { Slide, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import useJwtDecode from "./utils/useJwtDecode";
+import PropertyList from "./pages/PropertyList";
 
 function App() {
   useJwtDecode();
@@ -29,6 +30,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/property_list" element={<PropertyList />} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

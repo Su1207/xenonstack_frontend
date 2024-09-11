@@ -46,9 +46,41 @@ export default function Login() {
     }
   };
 
+  if (loading) {
+    return (
+      <div className="h-[90vh] w-full flex justify-center items-center">
+        <svg
+          className="animate-spin h-5 w-5 mr-3"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            className="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            strokeWidth="4"
+          ></circle>
+          <path
+            className="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8V0C6.477 0 2 4.477 2 10h2zm2 5.291A7.962 7.962 0 014 12H2c0 3.314 2.686 6 6 6v-2.709z"
+          ></path>
+        </svg>
+        <div className="font-semibold">loading</div>
+      </div>
+    );
+  }
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
+  const handleClick = () => {
+    navigate("/register");
+  };
 
   return (
     <div className="h-screen w-full flex md:flex-row flex-col-reverse overflow-hidden relative">
@@ -126,12 +158,12 @@ export default function Login() {
           </div>
           <p className="mt-6 text-center text-sm text-gray-500">
             Not a member?{" "}
-            <Link
-              to="/register"
-              className="font-semibold leading-6 text-orange-600 hover:text-orange-500 transition-all duration-300 ease-in"
+            <span
+              onClick={handleClick}
+              className="font-semibold cursor-pointer leading-6 text-orange-600 hover:text-orange-500 transition-all duration-300 ease-in"
             >
               Register
-            </Link>
+            </span>
           </p>
         </div>
       </div>

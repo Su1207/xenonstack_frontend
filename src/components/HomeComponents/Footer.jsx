@@ -1,45 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/property_list");
+  };
   return (
     <div className="bg-black pt-80">
       <div className=" py-[6rem] px-6 md:px-8 lg:px-16 text-white">
-        <div className="flex sm:flex-row flex-col gap-10 sm:gap-28 mb-[6rem] justify-center items-center sm:items-start">
-          <div className="flex flex-col sm:items-start items-center gap-2">
+        <div className="flex sm:flex-row flex-col gap-10 sm:gap-28 mb-[4rem] justify-center items-center">
+          <div className="flex flex-col items-center gap-2">
             <div className="text-4xl font-bold">LET'S TALK</div>
             <div className="text-base sm:text-left text-center font-extralight tracking-wider">
-              Build Hyper-Competitive, Disruptive Products & Services For The
-              New Normal
+              Empowering You to Find Your Perfect Home with Trusted, Tailored
+              Real Estate Solutions.
             </div>
-            <Link
-              to={"/contactUs"}
-              className="mt-4 py-3 px-6 text-base font-semibold cursor-pointer w-fit rounded-sm bg-[#40eab7] hover:bg-white text-black transition-all duration-200 ease-in-out"
-            >
+            <div className="mt-4 py-3 px-6 text-base font-semibold cursor-pointer w-fit rounded-sm bg-[#40eab7] hover:bg-white text-black transition-all duration-200 ease-in-out">
               GET IN TOUCH
-            </Link>
-          </div>
-          <div className="flex  flex-row flex-wrap  sm:flex-nowrap sm:flex-col justify-center items-center sm:items-start w-full gap-4">
-            <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-4">
-              <div className="py-3 px-4 text-xs font-normal tracking-wider rounded-sm bg-[#1e1c25] hover:bg-white hover:text-black transition-all duration-200 ease-in-out">
-                DIGITAL MARKETING
-              </div>
-              <div className="py-3 px-4 text-xs font-normal tracking-wider rounded-sm bg-[#1e1c25] hover:bg-white hover:text-black transition-all duration-200 ease-in-out">
-                UX DESIGN
-              </div>
-            </div>
-            <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-4">
-              <div className="py-3 px-4 text-xs font-normal tracking-wider rounded-sm bg-[#1e1c25] hover:bg-white hover:text-black transition-all duration-200 ease-in-out">
-                APP DEVELOPMENT{" "}
-              </div>
-              <div className="py-3 px-4 text-xs font-normal tracking-wider rounded-sm bg-[#1e1c25] hover:bg-white hover:text-black transition-all duration-200 ease-in-out">
-                SOFTWARE DEVELOPMENT
-              </div>
-            </div>
-            <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-4">
-              <div className="py-3 px-4 text-xs font-normal tracking-wider rounded-sm bg-[#1e1c25] hover:bg-white hover:text-black transition-all duration-200 ease-in-out">
-                END-TO-END SOLUTIONS
-              </div>
             </div>
           </div>
         </div>
@@ -49,7 +28,9 @@ const Footer = () => {
           <div className="bg-transparent flex flex-col items-center sm:items-start text-sm lg:text-base gap-5">
             <div className=" ">ABOUT US</div>
             <div className=" ">CONTACT US</div>
-            <div className=" ">CAREERS</div>
+            <div className="cursor-pointer" onClick={handleClick}>
+              PROPERTIES
+            </div>
           </div>
 
           <div className="bg-transparent flex items-center sm:items-start flex-col text-sm lg:text-base gap-5">
