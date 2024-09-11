@@ -22,7 +22,20 @@ This is the frontend of the Estate Website built using React, Tailwind CSS, and 
 ![Homepage](./Screenshots/Home1.png)
 
 ### Property List Page
-![Property List](./screenshots/property-list.png)
+![Gallery](./Screenshots/home2.png)
+
+### Property List Page
+![Customer Stories](./Screenshots/home3.png)
+
+### Property List Page
+![Login Page](./Screenshots/home4.png)
+
+### Property List Page
+![Properties List](./Screenshots/home5.png)
+
+### Responsive
+(./Screenshots/home6.png)
+(./Screenshots/home7.png)
 
 ## Installation
 
